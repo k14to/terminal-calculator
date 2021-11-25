@@ -13,8 +13,8 @@ int main() {
         char b;
 
         int c;
-		
-	cin >> a;
+
+        cin >> a;
 
 
         while(true)
@@ -23,38 +23,45 @@ int main() {
         switch(b)
         {
               case '+':
-                        cin >> c;
-			cout<<a+c<<endl;
-			a = a+c;
-			break;
+                        cout<<"| ";
+			cin >> c;
+			cout<<" |"<<endl;
+                        cout<<"| "<<a+c<<" |"<<endl;
+                        a = a+c;
+                        break;
 
               case '-':
+			cout<<"| ";
                         cin >> c;
-                        cout<<a-c<<endl;
+			cout<<" |"<<endl;
+                        cout<<"| "<<a-c<<" |"<<endl;
                         a= a-c;
-			break;
+                        break;
 
               case '*':
-                        cin >> c;
-                        cout<<a*c<<endl;
+			cout<<"| ";
+			cin >> c;
+			cout<<" |"<<endl;
+                        cout<<"| "<<a*c<<" |"<<endl;
                         a = a*c;
-			break;
+                        break;
 
               case '/':
-                        cin >> c;
-                        cout<<a/c<<endl;
-			a = a/c;
+			cout<<"| ";                        
+			cin >> c;
+			cout<<" |"<<endl;
+                        cout<<"| "<<a/c<<" |"<<endl;
+                        a = a/c;
                         break;
 
               case 'r':
-                        cout<<sqrt(a)<<endl;
-			a = sqrt(a);
+			cout<<"| "<<sqrt(a)<<" |"<<endl;
+                        a = sqrt(a);
                         break;
 
-	      case 'c':
-		      /*	a = NULL;
-		*/	cin >> a;
-			break;
+              case 'c':
+              	        cin >> a;
+                        break;
 
         }
 
