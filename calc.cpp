@@ -23,44 +23,37 @@ int main() {
         switch(b)
         {
               case '+':
-                        cout<<"| ";
-			cin >> c;
-			cout<<" |"<<endl;
+                        cin >> c;
                         cout<<"| "<<a+c<<" |"<<endl;
                         a = a+c;
                         break;
 
               case '-':
-			cout<<"| ";
                         cin >> c;
-			cout<<" |"<<endl;
                         cout<<"| "<<a-c<<" |"<<endl;
                         a= a-c;
                         break;
 
               case '*':
-			cout<<"| ";
-			cin >> c;
-			cout<<" |"<<endl;
+                        cin >> c;
                         cout<<"| "<<a*c<<" |"<<endl;
                         a = a*c;
                         break;
 
               case '/':
-			cout<<"| ";                        
-			cin >> c;
-			cout<<" |"<<endl;
+                        cin >> c;
                         cout<<"| "<<a/c<<" |"<<endl;
                         a = a/c;
                         break;
 
               case 'r':
-			cout<<"| "<<sqrt(a)<<" |"<<endl;
+                        cout<<"| "<<sqrt(a)<<" |"<<endl;
                         a = sqrt(a);
                         break;
 
               case 'c':
-              	        cin >> a;
+                      /*        a = NULL;
+                */      cin >> a;
                         break;
 
         }
